@@ -25,8 +25,8 @@ public class Tp00MarazAgustinaApplication {
 			
 		Calculadora unCalculadora = new Calculadora(); //metodo constructor
 		
-		unCalculadora.setN1(5);
-		unCalculadora.setN2(5);
+		unCalculadora.setN1(3);
+		unCalculadora.setN2(2);
 		
 		System.out.println("El resultado de la suma es " + unCalculadora.resolverSuma());
 		
@@ -36,8 +36,12 @@ public class Tp00MarazAgustinaApplication {
 		
 		System.out.println("El resultado de la multiplicacion es " + unCalculadora.resolverMultiplicacion());
 		
+		System.out.println("El resultado de la potencia es " + unCalculadora.resolverPotencia());
 		
+		System.out.println("El resultado de la raiz de " + unCalculadora.getN1() +" es " + unCalculadora.resolverRaiz1());
 		
+		System.out.println("El resultado de la raiz de " + unCalculadora.getN2() +" es " + unCalculadora.resolverRaiz2());
+
 	}
 	
 	public static String darNombre() {

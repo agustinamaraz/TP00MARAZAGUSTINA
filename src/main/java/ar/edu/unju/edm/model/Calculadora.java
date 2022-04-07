@@ -1,5 +1,9 @@
 package ar.edu.unju.edm.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class Calculadora {
 	private int n1; 
 	private int n2;
@@ -50,6 +54,24 @@ public class Calculadora {
 	public int resolverMultiplicacion() {
 		int resultado =n1*n2;
 		return resultado;
+	}
+	
+	public int resolverPotencia() {
+		int potencia=1;
+		
+		for(int i=1; i<=n2;i++) {
+			potencia=potencia*n1;
+		}
+		
+		return potencia;
+	}
+	
+	public double resolverRaiz1() {
+		return Math.sqrt(n1);
+	}
+	
+	public double resolverRaiz2() {
+		return Math.sqrt(n2);
 	}
 	
 }
