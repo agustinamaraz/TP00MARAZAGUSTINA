@@ -43,7 +43,7 @@ public class Calculadora {
 		float resultado=0;
 		
 		if (n2!=0) {
-			resultado=n1/n2;
+			resultado=(float)n1/(float)n2;
 		}else {
 			System.out.println("No se puede divivir por 0");
 		}
@@ -66,12 +66,18 @@ public class Calculadora {
 		return potencia;
 	}
 	
-	public double resolverRaiz1() {
-		return Math.sqrt(n1);
+	public double resolverRaiz() {
+		double resultado = 0;
+		
+		if(n2!=0) {
+			resultado = Math.pow((double)n1, 1/(double)n2);
+		}else {
+			System.out.println("El indice no puede ser 0");
+		}
+		
+		
+		return resultado;
 	}
-	
-	public double resolverRaiz2() {
-		return Math.sqrt(n2);
-	}
+
 	
 }
